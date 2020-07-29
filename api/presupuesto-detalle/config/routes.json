@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/presupuesto-detalles",
+      "handler": "presupuesto-detalle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/presupuesto-detalles/count",
+      "handler": "presupuesto-detalle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/presupuesto-detalles/:id",
+      "handler": "presupuesto-detalle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/presupuesto-detalles",
+      "handler": "presupuesto-detalle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/presupuesto-detalles/:id",
+      "handler": "presupuesto-detalle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/presupuesto-detalles/:id",
+      "handler": "presupuesto-detalle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

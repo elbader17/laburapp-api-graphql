@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedido-servicios",
+      "handler": "pedido-servicio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-servicios/count",
+      "handler": "pedido-servicio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-servicios/:id",
+      "handler": "pedido-servicio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedido-servicios",
+      "handler": "pedido-servicio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedido-servicios/:id",
+      "handler": "pedido-servicio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedido-servicios/:id",
+      "handler": "pedido-servicio.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

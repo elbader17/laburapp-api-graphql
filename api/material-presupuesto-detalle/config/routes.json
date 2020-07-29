@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/material-presupuesto-detalles",
+      "handler": "material-presupuesto-detalle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/material-presupuesto-detalles/count",
+      "handler": "material-presupuesto-detalle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/material-presupuesto-detalles/:id",
+      "handler": "material-presupuesto-detalle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/material-presupuesto-detalles",
+      "handler": "material-presupuesto-detalle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/material-presupuesto-detalles/:id",
+      "handler": "material-presupuesto-detalle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/material-presupuesto-detalles/:id",
+      "handler": "material-presupuesto-detalle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

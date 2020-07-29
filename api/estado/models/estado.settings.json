@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estados",
+  "info": {
+    "name": "Estado"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "EstadoID": {
+      "type": "uid",
+      "required": true
+    },
+    "EstadoNombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "EstadoDescripcion": {
+      "type": "text"
+    },
+    "pedidos": {
+      "via": "estado",
+      "collection": "pedido"
+    }
+  }
+}

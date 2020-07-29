@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuarios",
+  "info": {
+    "name": "persona"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "PersonaNombre": {
+      "type": "string",
+      "required": true
+    },
+    "PersonaApellido": {
+      "type": "string",
+      "required": true
+    },
+    "PersonaDNI": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "PersonaFechaNacimiento": {
+      "type": "date",
+      "required": true
+    },
+    "PersonaDomicilio": {
+      "type": "richtext",
+      "required": true
+    },
+    "PersonaTelefono": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "PersonaEmail": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "Persona_ID": {
+      "type": "uid",
+      "required": true
+    },
+    "usuario_laburapp": {
+      "model": "usuario-laburapp",
+      "via": "persona"
+    },
+    "localidad": {
+      "model": "localidad",
+      "via": "personas"
+    },
+    "prestador": {
+      "via": "persona",
+      "model": "prestador"
+    },
+    "pedidos": {
+      "via": "persona",
+      "collection": "pedido"
+    }
+  }
+}

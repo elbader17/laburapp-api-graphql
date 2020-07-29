@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestadors",
+  "info": {
+    "name": "Prestador"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "PrestadorID": {
+      "type": "uid",
+      "required": true
+    },
+    "PrestadorFechaIngreso": {
+      "type": "date",
+      "required": true
+    },
+    "persona": {
+      "model": "usuario",
+      "via": "prestador"
+    },
+    "presupuestos": {
+      "via": "prestador",
+      "collection": "presupuesto"
+    },
+    "prestador_servicios": {
+      "collection": "prestador-servicios",
+      "via": "prestador"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tarea-presupuesto-detalles",
+      "handler": "tarea-presupuesto-detalle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tarea-presupuesto-detalles/count",
+      "handler": "tarea-presupuesto-detalle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tarea-presupuesto-detalles/:id",
+      "handler": "tarea-presupuesto-detalle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tarea-presupuesto-detalles",
+      "handler": "tarea-presupuesto-detalle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tarea-presupuesto-detalles/:id",
+      "handler": "tarea-presupuesto-detalle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tarea-presupuesto-detalles/:id",
+      "handler": "tarea-presupuesto-detalle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

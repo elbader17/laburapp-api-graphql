@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tarea_presupuesto_detalles",
+  "info": {
+    "name": "TareaPresupuestoDetalle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "TareaPresupuestoDetalleID": {
+      "type": "uid",
+      "required": true
+    },
+    "TareaPresupuestoDetallePrecio": {
+      "type": "decimal"
+    },
+    "TareaPresupuestoDetalleCantidad": {
+      "type": "integer",
+      "required": true
+    },
+    "tarea": {
+      "via": "tarea_presupuesto_detalles",
+      "model": "tarea"
+    },
+    "presupuesto_detalle": {
+      "via": "tarea_presupuesto_detalles",
+      "model": "presupuesto-detalle"
+    }
+  }
+}

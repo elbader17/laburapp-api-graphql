@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prestadors",
+      "handler": "prestador.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestadors/count",
+      "handler": "prestador.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestadors/:id",
+      "handler": "prestador.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestadors",
+      "handler": "prestador.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prestadors/:id",
+      "handler": "prestador.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prestadors/:id",
+      "handler": "prestador.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/localidads",
+      "handler": "localidad.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/localidads/count",
+      "handler": "localidad.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/localidads/:id",
+      "handler": "localidad.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/localidads",
+      "handler": "localidad.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/localidads/:id",
+      "handler": "localidad.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/localidads/:id",
+      "handler": "localidad.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

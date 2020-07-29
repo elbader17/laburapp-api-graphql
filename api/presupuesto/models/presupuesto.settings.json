@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presupuestos",
+  "info": {
+    "name": "Presupuesto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "PresupuestoID": {
+      "type": "uid",
+      "required": true
+    },
+    "PresupuestoFecha": {
+      "type": "date"
+    },
+    "prestador": {
+      "model": "prestador",
+      "via": "presupuestos"
+    },
+    "presupuesto_detalles": {
+      "via": "presupuesto",
+      "collection": "presupuesto-detalle"
+    }
+  }
+}

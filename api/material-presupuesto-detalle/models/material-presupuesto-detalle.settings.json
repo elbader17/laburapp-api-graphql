@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "material_presupuesto_detalles",
+  "info": {
+    "name": "MaterialPresupuestoDetalle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "MaterialPresupuestoDetalle": {
+      "type": "uid",
+      "required": true
+    },
+    "MaterialPresupuestoDetallePrecio": {
+      "type": "decimal",
+      "required": true
+    },
+    "MaterialPresupuestoDetalleCantidad": {
+      "type": "integer"
+    },
+    "material": {
+      "via": "material_presupuesto_detalles",
+      "model": "material"
+    },
+    "presupuesto_detalle": {
+      "via": "material_presupuesto_detalles",
+      "model": "presupuesto-detalle"
+    }
+  }
+}

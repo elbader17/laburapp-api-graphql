@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "localidads",
+  "info": {
+    "name": "localidad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "LocalidadID": {
+      "type": "uid",
+      "required": true
+    },
+    "LocalidadNombre": {
+      "type": "string",
+      "required": true
+    },
+    "personas": {
+      "via": "localidad",
+      "collection": "usuario"
+    },
+    "provincia": {
+      "via": "localidades",
+      "model": "provincia"
+    }
+  }
+}

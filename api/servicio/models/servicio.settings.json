@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servicios",
+  "info": {
+    "name": "Servicio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ServicioID": {
+      "type": "uid",
+      "required": true
+    },
+    "ServicioNombre": {
+      "type": "string",
+      "required": true
+    },
+    "ServicioDescripcion": {
+      "type": "text"
+    },
+    "prestador_servicios": {
+      "collection": "prestador-servicios",
+      "via": "servicio"
+    },
+    "pedido_servicios": {
+      "via": "servicio",
+      "collection": "pedido-servicio"
+    }
+  }
+}
