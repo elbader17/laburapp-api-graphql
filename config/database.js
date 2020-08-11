@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
         database: env('DATABASE_NAME', 'u724643927_api_laburapp_2'),
         username: env('DATABASE_USERNAME', 'u724643927_api_laburapp_2'),
         password: env('DATABASE_PASSWORD', 'Abc123abc123'),
-        ssl: env.bool('DATABASE_SSL', false),
+        ssl: env.bool('DATABASE_SSL', true),
       },
       options: {}
     },
