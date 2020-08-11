@@ -9,16 +9,12 @@
     "timestamps": true
   },
   "attributes": {
-    "TareaID": {
-      "type": "uid",
-      "required": true
-    },
     "TareaDescripcion": {
       "type": "text"
     },
     "tarea_presupuesto_detalles": {
-      "collection": "tarea-presupuesto-detalle",
-      "via": "tarea"
+      "via": "tarea",
+      "collection": "tarea-presupuesto-detalle"
     }
   }
 }

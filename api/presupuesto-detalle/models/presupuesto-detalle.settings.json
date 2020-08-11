@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "PresupuestoDetalleID": {
-      "type": "uid",
-      "required": true
-    },
     "pedido_servicio": {
       "model": "pedido-servicio",
       "via": "presupuesto_detalles"
@@ -22,8 +18,8 @@
       "via": "presupuesto_detalles"
     },
     "tarea_presupuesto_detalles": {
-      "collection": "tarea-presupuesto-detalle",
-      "via": "presupuesto_detalle"
+      "via": "presupuesto_detalle",
+      "collection": "tarea-presupuesto-detalle"
     },
     "material_presupuesto_detalles": {
       "collection": "material-presupuesto-detalle",

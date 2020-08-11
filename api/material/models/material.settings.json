@@ -9,16 +9,12 @@
     "timestamps": true
   },
   "attributes": {
-    "MaterialID": {
-      "type": "uid",
-      "required": true
-    },
     "MaterialDescripcion": {
       "type": "text"
     },
     "material_presupuesto_detalles": {
-      "collection": "material-presupuesto-detalle",
-      "via": "material"
+      "via": "material",
+      "collection": "material-presupuesto-detalle"
     }
   }
 }

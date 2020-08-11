@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "MaterialPresupuestoDetalle": {
-      "type": "uid",
-      "required": true
-    },
     "MaterialPresupuestoDetallePrecio": {
       "type": "decimal",
       "required": true
@@ -21,8 +17,8 @@
       "type": "integer"
     },
     "material": {
-      "via": "material_presupuesto_detalles",
-      "model": "material"
+      "model": "material",
+      "via": "material_presupuesto_detalles"
     },
     "presupuesto_detalle": {
       "via": "material_presupuesto_detalles",

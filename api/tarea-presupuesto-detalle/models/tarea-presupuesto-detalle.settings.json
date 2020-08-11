@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "TareaPresupuestoDetalleID": {
-      "type": "uid",
-      "required": true
-    },
     "TareaPresupuestoDetallePrecio": {
       "type": "decimal"
     },
@@ -21,12 +17,12 @@
       "required": true
     },
     "tarea": {
-      "via": "tarea_presupuesto_detalles",
-      "model": "tarea"
+      "model": "tarea",
+      "via": "tarea_presupuesto_detalles"
     },
     "presupuesto_detalle": {
-      "via": "tarea_presupuesto_detalles",
-      "model": "presupuesto-detalle"
+      "model": "presupuesto-detalle",
+      "via": "tarea_presupuesto_detalles"
     }
   }
 }

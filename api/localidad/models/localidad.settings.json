@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "LocalidadID": {
-      "type": "uid",
-      "required": true
-    },
     "LocalidadNombre": {
       "type": "string",
       "required": true

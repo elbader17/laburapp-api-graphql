@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "EstadoID": {
-      "type": "uid",
-      "required": true
-    },
     "EstadoNombre": {
       "type": "string",
       "required": true,

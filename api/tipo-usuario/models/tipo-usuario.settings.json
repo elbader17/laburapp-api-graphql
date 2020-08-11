@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "TipoUsuarioId": {
-      "type": "uid",
-      "required": true
-    },
     "TipoDeUsuarioNombre": {
       "type": "string",
       "required": true,

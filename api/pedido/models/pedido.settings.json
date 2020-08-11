@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "PedidoID": {
-      "type": "uid",
-      "required": true
-    },
     "PedidoFecha": {
       "type": "date",
       "required": true
@@ -21,8 +17,8 @@
       "type": "text"
     },
     "persona": {
-      "model": "usuario",
-      "via": "pedidos"
+      "via": "pedidos",
+      "model": "usuario"
     },
     "estado": {
       "model": "estado",

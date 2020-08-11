@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "ServicioID": {
-      "type": "uid",
-      "required": true
-    },
     "ServicioNombre": {
       "type": "string",
       "required": true
@@ -25,8 +21,8 @@
       "via": "servicio"
     },
     "pedido_servicios": {
-      "via": "servicio",
-      "collection": "pedido-servicio"
+      "collection": "pedido-servicio",
+      "via": "servicio"
     }
   }
 }

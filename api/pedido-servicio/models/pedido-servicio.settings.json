@@ -9,16 +9,12 @@
     "timestamps": true
   },
   "attributes": {
-    "PedidoServicioID": {
-      "type": "uid",
-      "required": true
-    },
     "PedidoServicioDescripcion": {
       "type": "text"
     },
     "servicio": {
-      "model": "servicio",
-      "via": "pedido_servicios"
+      "via": "pedido_servicios",
+      "model": "servicio"
     },
     "pedido": {
       "model": "pedido",

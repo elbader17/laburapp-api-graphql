@@ -40,13 +40,9 @@
       "unique": true,
       "required": true
     },
-    "Persona_ID": {
-      "type": "uid",
-      "required": true
-    },
     "usuario_laburapp": {
-      "model": "usuario-laburapp",
-      "via": "persona"
+      "via": "persona",
+      "model": "usuario-laburapp"
     },
     "localidad": {
       "model": "localidad",
@@ -57,8 +53,8 @@
       "model": "prestador"
     },
     "pedidos": {
-      "via": "persona",
-      "collection": "pedido"
+      "collection": "pedido",
+      "via": "persona"
     }
   }
 }

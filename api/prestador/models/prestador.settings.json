@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "PrestadorID": {
-      "type": "uid",
-      "required": true
-    },
     "PrestadorFechaIngreso": {
       "type": "date",
       "required": true
@@ -26,8 +22,8 @@
       "collection": "presupuesto"
     },
     "prestador_servicios": {
-      "collection": "prestador-servicios",
-      "via": "prestador"
+      "via": "prestador",
+      "collection": "prestador-servicios"
     }
   }
 }

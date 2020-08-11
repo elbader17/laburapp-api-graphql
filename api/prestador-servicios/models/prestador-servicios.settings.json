@@ -9,13 +9,9 @@
     "timestamps": true
   },
   "attributes": {
-    "PrestadorServiciosId": {
-      "type": "uid",
-      "required": true
-    },
     "prestador": {
-      "via": "prestador_servicios",
-      "model": "prestador"
+      "model": "prestador",
+      "via": "prestador_servicios"
     },
     "servicio": {
       "via": "prestador_servicios",

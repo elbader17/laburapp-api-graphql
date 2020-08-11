@@ -9,9 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "ProvinciaID": {
-      "type": "uid"
-    },
     "ProvinciaNombre": {
       "type": "string",
       "required": true,

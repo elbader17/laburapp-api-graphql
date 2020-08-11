@@ -14,20 +14,19 @@
       "required": true,
       "unique": true
     },
-    "UsuarioContrasena": {
+    "nousar": {
       "type": "password"
-    },
-    "UsuarioID": {
-      "type": "uid",
-      "required": true
     },
     "tipo_usuario": {
       "model": "tipo-usuario",
       "via": "usuario_laburapps"
     },
     "persona": {
-      "via": "usuario_laburapp",
-      "model": "usuario"
+      "model": "usuario",
+      "via": "usuario_laburapp"
+    },
+    "contrasena": {
+      "type": "string"
     }
   }
 }
